@@ -18,12 +18,12 @@ def retorna_dados_setor_bd():
         ['setor9',80,0,0,0,0,0]
     ]
 
-@app.route('/infra_usuario')
-def infra_usuario():
-    return render_template('infra_usuario.html')
-
 @app.route('/')
 def index():
+    return render_template('infra_usuario.html')
+
+@app.route('/infra')
+def infra():
     meses = retorna_opcoes_de_meses_bd()
     setores = retorna_dados_setor_bd()
     num_textos = len(setores)
