@@ -1,27 +1,27 @@
-@media (max-width: 575px){
+@media (min-width: 992px) {
+    .main-z {
+        width: 80%;
+    }
 
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
     .titulo {
-        font: normal normal 600 30px/24px Open Sans;
+        font: normal normal 600 36px/28px Open Sans;
         margin-left: 2%;
     }
 
     .subtitulo {
-        font: italic normal normal 16px/14px Open Sans;
+        font: italic normal normal 20px/28px Open Sans;
         margin-left: 2%;
     }
 
     .botao_voltar {
-        width: 8%;
+        width: 3%;
         background: url('/static/imagens/arrow-left.svg') 0% 0% no-repeat padding-box;
         border: 0;
         margin-left: 2%;
     }
 
     .botao_filtro {
-        width: 10%;
+        width: 5%;
         background: url('/static/imagens/filtro.svg') 0% 0% no-repeat padding-box;
         border: 0;
         margin-top: 1%;
@@ -29,19 +29,19 @@
 
     .area_principal {
         background-color: #EFEFEF;
-        margin-top: 10px;
+        margin-left: 10px;
+        width: 100%;
     }
 
     .texto_filtro {
         margin-right: 1%;
-        padding-left: 82%;
+        padding-left: 87%;
         margin-top: 1%;
     }
 
     .caixa {
         border: 1px solid black;
-        margin-top: 4%;
-        width: 150px;
+        margin-top: 2%;
     }
 
     .selecao_de_filtros {
@@ -55,14 +55,15 @@
         background-color: #2264EE;
         padding: 2%;
         margin: 1%;
+        width: 50%;
     }
 
     .barra_lateral {
-        width: 20%;
-        background: #141533 0% 0% no-repeat padding-box;
+        flex-direction: column;
+        width: 15%;
+        background: #141533;
         border-radius: 0px 62px 0px 0px;
         color: white;
-        flex: auto;
     }
 
     .nav-link {
@@ -70,17 +71,17 @@
         text-align: left;
         font: normal normal 300 24px/28px Open Sans;
         letter-spacing: 0px;
-        margin-left: 20%;
+        margin-left: 5%;
         margin-top: 5%
     }
 
     .area_de_setores {
         overflow: auto;
-        max-height: 520px;
+        max-height: 650px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .titulo {
         font: normal normal 600 36px/28px Open Sans;
         margin-left: 2%;
@@ -142,15 +143,14 @@
         background: #141533 0% 0% no-repeat padding-box;
         border-radius: 0px 62px 0px 0px;
         color: white;
-        flex: auto;
     }
 
     .nav-link {
         color: white;
         text-align: left;
-        font: normal normal 300 24px/28px Open Sans;
+        font: normal normal 24px/28px Open Sans;
         letter-spacing: 0px;
-        margin-left: 20%;
+        margin-left: 10%;
         margin-top: 5%
     }
 
@@ -160,26 +160,31 @@
     }
 }
 
-@media (min-width: 992px){
+@media (min-width:645px) and (max-width: 768px) {
+    .icon-z-epi {
+        margin-right: 10%;
+    }
+
+
     .titulo {
         font: normal normal 600 36px/28px Open Sans;
         margin-left: 2%;
     }
 
     .subtitulo {
-        font: italic normal normal 20px/28px Open Sans;
+        font: italic normal normal 16px/14px Open Sans;
         margin-left: 2%;
     }
 
     .botao_voltar {
-        width: 3%;
+        width: 8%;
         background: url('/static/imagens/arrow-left.svg') 0% 0% no-repeat padding-box;
         border: 0;
         margin-left: 2%;
     }
 
     .botao_filtro {
-        width: 5%;
+        width: 10%;
         background: url('/static/imagens/filtro.svg') 0% 0% no-repeat padding-box;
         border: 0;
         margin-top: 1%;
@@ -187,19 +192,20 @@
 
     .area_principal {
         background-color: #EFEFEF;
-        margin-left:10px;
-        width: 100%:
+        margin-right: 2%;
+        margin-top: 10px;
     }
 
     .texto_filtro {
         margin-right: 1%;
-        padding-left: 87%;
+        padding-left: 82%;
         margin-top: 1%;
     }
 
     .caixa {
         border: 1px solid black;
-        margin-top: 2%;
+        margin-top: 4%;
+        width: 140px;
     }
 
     .selecao_de_filtros {
@@ -213,12 +219,11 @@
         background-color: #2264EE;
         padding: 2%;
         margin: 1%;
-        width: 50%;
+        width: 80%;
     }
 
     .barra_lateral {
-        flex-direction: column;
-        width: 15%;
+        width: 20%;
         background: #141533 0% 0% no-repeat padding-box;
         border-radius: 0px 62px 0px 0px;
         color: white;
@@ -227,14 +232,96 @@
     .nav-link {
         color: white;
         text-align: left;
-        font: normal normal 300 24px/28px Open Sans;
+        font: normal normal 24px/28px Open Sans;
         letter-spacing: 0px;
-        margin-left: 5%;
+        margin-left: 10%;
         margin-top: 5%
     }
 
     .area_de_setores {
         overflow: auto;
-        max-height: 650px;
+        max-height: 520px;
+    }
+}
+
+@media  (max-width: 645px) {
+    .icon-z-epi {
+        margin-right: 5%;
+    }
+
+    .titulo {
+        font: normal normal 600 36px/28px Open Sans;
+        margin-left: 2%;
+    }
+
+    .subtitulo {
+        font: italic normal normal 16px/14px Open Sans;
+        margin-left: 2%;
+    }
+
+    .botao_voltar {
+        width: 8%;
+        background: url('/static/imagens/arrow-left.svg') 0% 0% no-repeat padding-box;
+        border: 0;
+        margin-left: 2%;
+    }
+
+    .botao_filtro {
+        width: 10%;
+        background: url('/static/imagens/filtro.svg') 0% 0% no-repeat padding-box;
+        border: 0;
+        margin-top: 1%;
+    }
+
+    .area_principal {
+        background-color: #EFEFEF;
+        margin-right: 2%;
+        margin-top: 10px;
+    }
+
+    .texto_filtro {
+        margin-right: 1%;
+        padding-left: 82%;
+        margin-top: 1%;
+    }
+
+    .caixa {
+        border: 1px solid black;
+        margin-top: 2%;
+        width: 120px;
+    }
+
+    .selecao_de_filtros {
+        width: 15%;
+        margin-left: 43%;
+        margin-top: 5%;
+    }
+
+    .nome_setor {
+        color: white;
+        background-color: #2264EE;
+        padding: 2%;
+        margin: 1%;
+        width: 60%;
+    }
+
+    .barra_lateral {
+        width: 25%;
+        background: #141533 0% 0% no-repeat padding-box;
+        border-radius: 0px 62px 0px 0px;
+        color: white;
+    }
+
+    .nav-link {
+        color: white;
+        font: normal normal 24px/28px Open Sans;
+        letter-spacing: 0px;
+        margin-left: 10%;
+        margin-top: 5%
+    }
+
+    .area_de_setores {
+        overflow: auto;
+        max-height: 520px;
     }
 }

@@ -15,10 +15,12 @@ def retorna_dados_setor_bd():
         ['setor6',70,0,0,0,0,0],
         ['setor7',80,0,0,0,0,0],
         ['setor8',80,0,0,0,0,0],
-        ['setor9',80,0,0,0,0,0],
-        ['setor10',80,0,0,0,0,0],
-        ['setor11',80,0,0,0,0,0],
+        ['setor9',80,0,0,0,0,0]
     ]
+
+@app.route('/infra_usuario')
+def infra_usuario():
+    return render_template('infra_usuario.html')
 
 @app.route('/')
 def index():
@@ -28,7 +30,8 @@ def index():
     num_linhas = (num_textos - 1) // 3 + 1  # 3 é o número de colunas que queremos
     num_colunas = (num_textos - 1) // num_linhas + 1
    
-    return render_template('index.html', meses=meses, textos=setores, num_linhas=num_linhas, num_colunas=num_colunas, num_textos=num_textos)
+    return render_template('infra_setor.html', meses=meses, textos=setores, num_linhas=num_linhas, num_colunas=num_colunas, num_textos=num_textos)
+  
 
 if __name__ == '__main__':
     app.run(debug=True)

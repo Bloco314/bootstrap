@@ -42,7 +42,7 @@
                     </h1>
                 </div>
 
-                <div class="d-flex flex-wrap flex-md-nowrap align-items-center">
+                <div class="align-items-center">
                     <h2 class="my-0 subtitulo">
                         Monitoramento de EPIS nos postos de trabalho > Infrações por setor
                     </h2>
@@ -61,7 +61,8 @@
                                         <form method="post" action="/submit-form">
                                             {% for mes in meses %}
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox"value="{{ mes }}" name="opcao">
+                                                <input class="form-check-input" type="checkbox" value="{{ mes }}"
+                                                    name="opcao">
                                                 <label class="form-check-label">{{ mes }}</label><br>
                                             </div>
                                             {% endfor %}
@@ -83,24 +84,24 @@
                                 <div class="row">
                                     {% for j in range(num_colunas) %}
                                     {% set idx = i * num_colunas + j %}
-                                    {% if idx < num_textos %} <div class="col-md-4">
+                                    {% if idx < num_textos %} <div class="col-md-4 col-sm-4 col-xs-2">
                                         <div class="box caixa">
                                             <p class="nome_setor">{{ textos[idx][0] }}</p>
                                             <div class="container">
                                                 <div class="row">
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-4 col-sm-2 icon-z-epi">
                                                         <div>
                                                             <img src="/static/imagens/pulseira.svg">
                                                             <p>{{ textos[idx][1] }}</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-4 col-sm-2 icon-z-epi">
                                                         <div>
                                                             <img src="/static/imagens/bota.svg">
                                                             <p>{{ textos[idx][2] }}</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-4 col-sm-2 icon-z-epi">
                                                         <div>
                                                             <img src="/static/imagens/capacete.svg">
                                                             <p>{{ textos[idx][3] }}</p>
@@ -108,19 +109,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-4 col-sm-2 icon-z-epi">
                                                         <div>
                                                             <img src="/static/imagens/oculos.svg">
                                                             <p>{{ textos[idx][4] }}</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-4 col-sm-2 icon-z-epi">
                                                         <div>
                                                             <img src="/static/imagens/luva.svg">
                                                             <p>{{ textos[idx][5] }}</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-4 col-sm-2 icon-z-epi">
                                                         <div>
                                                             <img src="/static/imagens/fone.svg">
                                                             <p>{{ textos[idx][6] }}</p>
@@ -128,7 +129,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                 </div>
                                 {% endif %}
@@ -138,9 +138,8 @@
                         </div>
                     </div>
                 </div>
+            </main>
         </div>
-        </main>
-    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
